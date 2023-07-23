@@ -8,6 +8,7 @@ body {
     height: 100vh;
     font-family: Hanken Grotesk;
     background: var(--very-light-blue, #ECF2FF);
+    margin: 0;
 }
 
 .base-card {
@@ -254,4 +255,105 @@ button {
 
 button:hover {
     background: var(--gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: 100%;
+        overflow: scroll;
+    }
+    .base-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 375px;
+        height: 809px;
+    }
+
+    .left-card {
+        width: 375px;
+        height: 356px;
+        border-radius: 0px 0px 32px 32px;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .result {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .score-result {
+        font-size: 56px;
+        margin: 0px;
+        margin-top: 25px;
+        margin-left: 38px;
+        margin-right: 39px;
+    }
+    
+    .score-max {
+        font-size: 16px;
+    }
+    
+    .result-reader {
+        margin: 0;
+        margin-top: 24px;
+        font-size: 24px;
+    }
+    
+    .result-text {
+        margin: 0;
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    .right-card {
+        font-size: 16px;
+    }
+
+    .summary {
+        margin: 0;
+        margin-top: 24px;
+        margin-left: 8px;
+        font-size: 18px;
+    }
+
+    .reaction {
+        margin-left: 8px;
+        width: 315px;
+        height: 56px;
+    }
+
+    .memory {
+        margin-left: 8px;
+        width: 315px;
+        height: 56px;
+    }
+
+    .verbal {
+        margin-left: 8px;
+        width: 315px;
+        height: 56px;
+    }
+
+    .visual {
+        margin-left: 8px;
+        width: 315px;
+        height: 56px;
+    }
+
+    button {
+        margin: 0;
+        margin-left: 8px;
+        margin-top: 24px;
+        margin-bottom: 30px;
+        width: 315px;
+        height: 56px;
+    }
 }
